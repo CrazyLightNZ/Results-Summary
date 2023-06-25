@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.score-card {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 2rem;
+}
+
+.score-card h1,
+.score-card p,
+.score-card span {
+  color: white;
+}
+
+.score-card p {
+  text-align: center;
+}
+
+.score-card h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.score {
+  background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 1.5rem;
+}
+
+.score-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.great {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.transparent {
+  opacity: 0.5;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.results li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.5rem 0;
+}
+
+.results {
+  width: 100%;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result img {
+  margin-right: 1rem;
+}
+
+.mark {
+  color: #373445;
+  font-weight: 700;
+}
+
+.total-score {
+  color: gray;
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+.summary h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #373445;
+  align-self: flex-start;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: inherit;
+  background: #303b59;
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+}
+
+@media (min-width: 500px) {
+  .results-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    padding: 2rem;
+  }
+
+  .score-card {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 50%;
+    height: 450px;
+  }
+
+  .summary {
+    width: 50%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
